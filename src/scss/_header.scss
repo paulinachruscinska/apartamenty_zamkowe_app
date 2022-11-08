@@ -10,6 +10,8 @@ header{
   justify-content: space-around;
   align-items: center;
   animation: zoom 1s linear;
+  animation-fill-mode: both;
+  overflow-y: hidden;
   &:before{
     content: '';
     background: url('../images/AC1.jpg') center no-repeat;
@@ -74,7 +76,7 @@ header{
 }
 @keyframes zoom{
   0%{
-  transform: scale(1.15);
+    transform: scale(1.25);
   }
   100%{
     transform: scale(1);
