@@ -1,4 +1,5 @@
 header{
+  max-width: 100%;
   height: 100vh;
   width: 100vw;
   background: url('../images/AC1.jpg') center no-repeat;
@@ -9,9 +10,9 @@ header{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  animation: zoom 1s linear;
-  animation-fill-mode: both;
   overflow-y: hidden;
+  animation: zoom 1s linear;
+
   &:before{
     content: '';
     background: url('../images/AC1.jpg') center no-repeat;
@@ -77,6 +78,8 @@ header{
 @keyframes zoom{
   0%{
     transform: scale(1.25);
+    overflow-y: hidden;
+    max-width: 100%;
   }
   100%{
     transform: scale(1);
