@@ -1,0 +1,15 @@
+$tablet-width: 768px;
+$desktop-width:1024px;
+
+@mixin tablet(){
+  @media (min-width: #{$tablet-width}){
+    margin: 2%;
+    @content;
+  }
+}
+@mixin desktop(){
+  @media(min-width: #{$desktop-width}){
+    margin: 4%;
+    @content;
+  }
+}
