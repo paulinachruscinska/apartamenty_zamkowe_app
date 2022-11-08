@@ -1,0 +1,90 @@
+header{
+  height: 100vh;
+  width: 100vw;
+  background: url('../images/AC1.jpg') center no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  animation: zoom 1s linear;
+  &:before{
+    content: '';
+    background: url('../images/AC1.jpg') center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    position:absolute;
+    filter: blur(7px);
+    z-index: 1;
+    opacity: 0;
+    animation: appearance 1.5s linear 1s;
+    animation-fill-mode: both;
+  }
+  .header__text{
+    max-width: 100%;
+    position:relative;
+    z-index: 2;
+    background-color: transparent;
+    opacity: 0;
+    animation: appearance 1.5s linear 3s;
+    animation-fill-mode: both;
+    @include tablet;
+    @include desktop;
+    h1, p{
+      text-align: center;
+      text-transform: uppercase;
+      background-color: transparent;
+    }
+    h1{
+      margin: 1rem;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      font-weight: 400;
+
+      @include tablet{
+        font-size: 4rem;
+        letter-spacing: 5px;
+      }
+      @include desktop {
+        font-size: 5rem;
+        letter-spacing: 7px;
+      }
+    }
+    p{
+      font-weight: 300;
+      margin: 2rem;
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+
+      @include tablet{
+        font-size: 2.4rem;
+        letter-spacing: 5px;
+      }
+      @include desktop {
+        font-size: 3rem;
+        letter-spacing: 5px;
+      }
+    }
+  }
+}
+@keyframes zoom{
+  0%{
+  transform: scale(1.15);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

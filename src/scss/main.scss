@@ -1,8 +1,13 @@
 @import 'settings/fonts';
 @import 'settings/colors';
+@import 'settings/devices';
+@import 'header';
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: $backgroundColor;
+  color: $fontColor;
+  font-family: $mainFont;
 }
