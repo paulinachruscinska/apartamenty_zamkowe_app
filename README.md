@@ -27,7 +27,7 @@
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/paulinachruscinska/give_back_old_stuff_app.git
+   git clone https://github.com/paulinachruscinska/apartamenty_zamkowe_app.git
    ```
 2. Install NPM packages
    ```sh
