@@ -1,14 +1,65 @@
 @import 'settings/devices';
 @import 'settings/colors';
 @import 'settings/fonts';
-
+.contact{
+  padding: 1rem 0;
+}
+.contact__body{
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    padding: 1rem 0;
+  }
+  @include desktop{
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+  }
+}
 .contact__body__text{
   background-color: $boxColor;
+  box-shadow: $boxColor 2px 2px 2px;
+  @include tablet{
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+    position: absolute;
+    //height: 45vh;
+    margin: 0;
+    width: 54vw;
+  }
+  @include desktop{
+    //padding: 10px 0;
+    //max-height: 100%;
+    margin: 0;
+    width: 46vw;
+  }
+  @include big-desktop{
+    width: 40vw;
+    margin: 0;
+  }
 }
 .contact__body__photo{
   background: url("../images/flowers.jpeg") center no-repeat;
   background-size: cover;
   height: 50vh;
+  box-shadow: $boxColor 2px 2px 2px;
+  @include tablet{
+    width: 55vw;
+    margin: 0;
+  }
+  @include desktop{
+    margin: 0;
+    height: 57vh;
+    width: 47vw;
+    background-position: 0 75%;
+
+  }
 }
 h3{
   text-transform: none;
@@ -35,12 +86,14 @@ h3{
 
   @include galaxyFold{
     font-size: 1rem;
+    padding: 1rem 0.5rem;
   }
   @include tablet{
     font-size: 1.5rem;
   }
   @include desktop{
     font-size: 1.75rem;
+    margin: 0;
   }
 }
 .text{
@@ -48,14 +101,38 @@ h3{
   text-align: left;
   margin: 0;
   padding: 1rem 1.5rem;
+  text-transform: none;
+  letter-spacing: 1px;
 
   @include galaxyFold{
     font-size: 0.8rem;
+    padding: 1rem 0.5rem;
   }
   @include tablet{
     font-size: 1.25rem;
   }
   @include desktop{
     font-size: 1.5rem;
+    margin: 0;
   }
+}
+.contact__logo{
+  display: flex;
+  justify-content: center;
+}
+.logo__link{
+  width: 40px;
+  height: 40px;
+  margin: 1rem 2rem 2rem;
+  box-sizing: border-box;
+  background: $hoverColor;
+  @include big-desktop{
+    margin: 1rem 2rem;
+  }
+}
+.facebook-logo{
+  mask: url('../images/facebook.svg') no-repeat center;
+}
+.instagram-logo{
+  mask: url('../images/instagram.svg') no-repeat center;
 }

@@ -1,6 +1,7 @@
 $galaxyFold-width: 300px;
 $tablet-width: 768px;
 $desktop-width:1024px;
+$big-desktop-width: 1500px;
 
 @mixin galaxyFold(){
   @media (max-width: #{$galaxyFold-width}){
@@ -16,7 +17,13 @@ $desktop-width:1024px;
 }
 @mixin desktop(){
   @media(min-width: #{$desktop-width}){
-    margin: 4%;
+    margin: 1em 10%;
+    @content;
+  }
+}
+@mixin big-desktop(){
+  @media(min-width: #{$big-desktop-width}){
+    margin: 1em 10%;
     @content;
   }
 }
