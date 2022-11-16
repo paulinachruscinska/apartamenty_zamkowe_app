@@ -1,0 +1,61 @@
+@import 'settings/devices';
+@import 'settings/colors';
+@import 'settings/fonts';
+
+.contact__body__text{
+  background-color: $boxColor;
+}
+.contact__body__photo{
+  background: url("../images/flowers.jpeg") center no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+h3{
+  text-transform: none;
+  font-size: 1.5rem;
+  font-family: $additionalFont;
+  margin: 1rem 0;
+  @include galaxyFold{
+    font-size: 1rem;
+  }
+  @include tablet{
+    font-size: 1.7rem;
+  }
+  @include desktop{
+    font-size: 2rem;
+  }
+}
+.text--main{
+  text-align: left;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  color: $hoverColor;
+  margin: 0;
+  padding: 1.5rem;
+
+  @include galaxyFold{
+    font-size: 1rem;
+  }
+  @include tablet{
+    font-size: 1.5rem;
+  }
+  @include desktop{
+    font-size: 1.75rem;
+  }
+}
+.text{
+  font-size: 1rem;
+  text-align: left;
+  margin: 0;
+  padding: 1rem 1.5rem;
+
+  @include galaxyFold{
+    font-size: 0.8rem;
+  }
+  @include tablet{
+    font-size: 1.25rem;
+  }
+  @include desktop{
+    font-size: 1.5rem;
+  }
+}
