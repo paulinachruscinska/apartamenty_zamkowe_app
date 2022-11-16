@@ -81,6 +81,7 @@ header {
       letter-spacing: 2px;
       text-align: center;
       text-transform: uppercase;
+      padding-bottom: 1rem;
 
       @include galaxyFold{
         font-size: 1.25rem;
