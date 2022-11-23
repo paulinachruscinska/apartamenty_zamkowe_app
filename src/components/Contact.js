@@ -6,7 +6,7 @@ const contactInformation=[
     {
         main: "lokalizacja",
         additionalInformation_first: 'Józefa Piłsudskiego 15D',
-        additionalInformation_second: '82-500',
+        additionalInformation_second: '82-500 Kwidzyn',
     },
     {
         main: "email/telefon",
