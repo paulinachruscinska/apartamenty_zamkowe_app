@@ -21,7 +21,6 @@ const images = [
     {
         original: img1,
         //thumbnail: img1,
-        //originalHeight: '500px'
 
     },
     {
@@ -137,7 +136,12 @@ export default function Carina(){
             <div className={'modal' + active}>
                 <div className='overlay'>
                     <div className='modal--content'>
-                        <ImageGallery items={images} showNav={true}/>
+                        <ImageGallery
+                            items={images}
+                            showNav={true}
+                            autoPlay={true}
+                            disableSwipe={true}
+                        />
                         <button onClick={()=>setModal(false)} className='exit'></button>
                     </div>
                 </div>

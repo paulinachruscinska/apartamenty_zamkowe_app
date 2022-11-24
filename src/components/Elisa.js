@@ -10,38 +10,44 @@ const images = [
     {
         original: img1,
         //thumbnail: img1,
-        originalHeight: '500px'
+        //originalHeight: '500px',
+        //thumbnailHeight: '70px',
+        //thumbnailWidth: '70px'
+
 
     },
     {
         original: img2,
         //thumbnail: img2,
-        originalHeight: '500px'
+        //originalHeight: '500px',
+        //thumbnailHeight: '50px'
 
     },
     {
         original: img3,
         //thumbnail: img3,
-        originalHeight: '500px'
+        //originalHeight: '500px'
+        //thumbnailHeight: '50px'
 
     },
     {
         original: img4,
         //thumbnail: img4,
-        originalHeight: '500px'
+        //originalHeight: '500px'
+        //thumbnailHeight: '50px'
 
     },
     {
         original: img5,
-        //thumbnail: img5,
-        originalHeight: '500px'
-
+       // thumbnail: img5,
+        //originalHeight: '500px'
+        //thumbnailHeight: '50px'
     },
     {
         original: img6,
         //thumbnail: img6,
-        originalHeight: '500px'
-
+        //originalHeight: '500px'
+        //thumbnailHeight: '50px'
     }
 ]
 export default function Elisa(){
@@ -58,7 +64,12 @@ export default function Elisa(){
             <div className={'modal' + active}>
                 <div className='overlay'>
                     <div className='modal--content'>
-                        <ImageGallery items={images} showNav={true}/>
+                        <ImageGallery
+                            items={images}
+                            showNav={true}
+                            autoPlay={true}
+                            disableSwipe={true}
+                        />
                         <button onClick={()=>setModal(false)} className='exit'></button>
                     </div>
                 </div>
