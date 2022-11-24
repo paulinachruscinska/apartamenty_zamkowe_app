@@ -74,8 +74,32 @@
   background: transparent;
   padding: 14px 28px;
   border-radius: 3px;
-  max-width: 600px;
-  min-width: 300px;
+  width: 90%;
+  @include tablet{
+    margin: 0;
+    max-width: 75%;
+  }
+  @include desktop{
+    margin: 0;
+    max-width: 75%;
+  }
+  @include big-desktop{
+    margin: 0;
+    max-width: 75%;
+  }
+
+  //height: 80vh;
+  //min-width: 250px;
+}
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  //width: 100% !important;
+}
+.image-gallery-svg{
+  width: 30px !important;
+  height: 60px !important;
+}
+.image-gallery-fullscreen-button, .image-gallery-play-button{
+  padding: 0 20px !important;
 }
 
 .exit {
