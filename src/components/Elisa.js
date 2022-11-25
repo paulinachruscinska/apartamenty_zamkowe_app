@@ -59,7 +59,11 @@ export default function Elisa(){
     }
     return (
         <>
-            <section className='apartament elisa' onClick={handleModal}/>
+            <section className='apartament elisa' onClick={handleModal}>
+                <div className='hover'>
+                    <p className='hover__text'>Apartament ELISA</p>
+                </div>
+            </section>
             {modal && (
             <div className={'modal' + active}>
                 <div className='overlay'>

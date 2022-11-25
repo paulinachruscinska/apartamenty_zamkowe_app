@@ -4,8 +4,8 @@ import Elisa from "./Elisa";
 export default function Gallery(){
     return (
         <main className='gallery'>
-            <h3>Przepiękne apartamenty w samym Centrum Miasta</h3>
-            <h2>zapoznaj się z naszą ofertą</h2>
+            <h3>Spędź cudowny wieczór</h3>
+            <h2>nasze apartamenty na wynajem</h2>
             <section className='apartaments'>
                 <Carina/>
                 <Elisa/>
