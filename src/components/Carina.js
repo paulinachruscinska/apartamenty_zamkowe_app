@@ -129,18 +129,25 @@ export default function Carina(){
         setModal(true)
         setActive('active')
     }
+
     return(
         <>
-        <section className='apartament carina' onClick={handleModal}/>
+            <section className='apartament carina' onClick={handleModal}>
+                <div className='hover'>
+                    <p className='hover__text'>Apartament CARINA</p>
+                </div>
+            </section>
             {modal && (
-            <div className={'modal' + active}>
-                <div className='overlay'>
+                <div className={'modal' + active}>
+                <div className='overlay' >
                     <div className='modal--content'>
                         <ImageGallery
                             items={images}
                             showNav={true}
                             autoPlay={true}
                             disableSwipe={true}
+                            //lazyLoad={true}
+                            disableKeyDown={true}
                         />
                         <button onClick={()=>setModal(false)} className='exit'></button>
                     </div>
