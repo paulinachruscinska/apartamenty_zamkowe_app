@@ -25,6 +25,10 @@
 .contact__body__text{
   background-color: $boxColor;
   box-shadow: $boxColor 2px 2px 2px;
+  transition-duration: 1.2s;
+  transition-timing-function: cubic-bezier(0.35, 0.71, 0.26, 0.88);
+  transition-property: all;
+  transition-delay: 0s;
   @include tablet{
     top:50%;
     left: 0;
@@ -51,6 +55,11 @@
   background-size: cover;
   height: 50vh;
   box-shadow: $boxColor 2px 2px 2px;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.91, 0.13, 0.26, 0.88);
+  transition-property: all;
+  transition-delay: 0.1s;
+
   @include tablet{
     width: 55vw;
     margin: 0;

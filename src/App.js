@@ -8,8 +8,8 @@ export default function App() {
   return (
       <>
           <Header/>
-          <Gallery/>
           <Decription/>
+          <Gallery/>
           <Contact/>
       </>
   );
