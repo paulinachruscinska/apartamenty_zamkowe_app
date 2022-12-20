@@ -6,11 +6,6 @@
   padding: 1rem 0;
   .apartaments{
     padding: 0 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    gap: 2rem;
     @include tablet{
       padding: 0;
     }
@@ -19,10 +14,16 @@
     }
     @include big-desktop{
       padding: 0;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
 
+    }
+    .apartament__box{
+      display: flex;
+      flex-direction: column;
+      @include tablet{
+        flex-direction: row;
+      }
+      @include desktop;
+      @include big-desktop;
     }
     .apartament {
       margin: 0;

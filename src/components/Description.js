@@ -1,54 +1,46 @@
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import img1 from '../images/birthday.jpg';
 import img2 from '../images/session1.jpg';
-import img3 from '../images/session2.jpg';
-import img4 from '../images/session3.jpg';
-import img5 from '../images/session4.jpg';
-import img6 from '../images/flowers_hands.jpg';
-import img7 from '../images/flowers_bath.jpg';
-import img8 from '../images/flowers_hands.jpg';
-import img9 from '../images/AC9.jpeg';
-const carousel =[
-    {img: img1, alt: 'image-birthday'},
-    {img: img2, alt: 'session'},
-    {img: img3, alt: 'session'},
-    {img: img4, alt: 'session'},
-    {img: img5, alt: 'session'},
-    {img: img6, alt: 'flowers'},
-    {img: img7, alt: 'flowers'},
-    {img: img8, alt: 'wine'},
-]
-const responsive = {
-    desktop: {
-        breakpoint: { max: 3000, min: 1024 },
-        items: 6,
-        slidesToSlide: 3 // optional, default to 1.
-    },
-    tablet: {
-        breakpoint: { max: 1024, min: 464 },
-        items: 2,
-        slidesToSlide: 2 // optional, default to 1.
-    },
-    mobile: {
-        breakpoint: { max: 464, min: 0 },
-        items: 1,
-        slidesToSlide: 1 // optional, default to 1.
-    }
-};
+import img9 from '../images/AC15.jpg';
+import img10 from '../images/AC17.jpg';
+
 
 
 export default function Decription(){
     return(
         <section className='description'>
-            <div className='description--box ds1'/>
-            <div className='description--box ds2'>
-            <h2 className='description__h2'>Odkryj nasze wyjątkowe apartamenty</h2>
-            <p className='description__text'>Apartamenty, które oferujemy charakteryzują się nadzwyczajnym komfortem
-                oraz nieprzeciętnym wnętrzem. Są idealnym miejscem na romantyczne wieczory, noce poślubne, pauzę w podróży czy sesje
-                fotograficzne. Z pewnością urlop w naszych apartamentach zagwarantuje miłe wspomnienia ze wspólnego wypoczynku.</p>
-            <div className='description--background'/>
-            </div>
+                <h2 className='description__header'>Odkryj nasze wyjątkowe apartamenty</h2>
+            <section className='description__container'>
+                <div className='description__box'>
+                    <div className='description__photo'>
+                        <img alt='session' src={img2} className='description__item1 '/>
+                    </div>
+                    <div className='description__item2 description__text'>
+                        <h3 className='description__text--header'>Komfort przede wszystkim</h3>
+                        <p className='description__text--p'>Apartamenty, które oferujemy charakteryzują się nadzwyczajnym komfortem oraz nieprzeciętnym wnętrzem.
+                        Są idealnym miejscem na romantyczne wieczory, noce poślubne, pauzę w podróży czy sesje fotograficzne.
+                        Z pewnością urlop w naszych apartamentach zagwarantuje miłe wspomnienia ze wspólnego wypoczynku.</p>
+                    </div>
+                </div>
+                <div className='description__box'>
+                    <div className='description__photo'>
+                        <img alt='kitchen' src={img9} className='description__item3 '/>
+                    </div>
+                    <div className='description__item4 description__text'>
+                        <h3 className='description__text--header'>Wszystko czego potrzebujesz</h3>
+                        <p className='description__text--p'>W pełni wyposażony aneks kuchenny czy strefa wypoczynku sprawiają, że nawet w podróży służbowej goście mogą
+                        poczuć się jak w domu.</p>
+                    </div>
+                </div>
+                <div className='description__box'>
+                    <div className='description__photo'>
+                        <img src={img10} alt='tv' className='description__item5 '/>
+                    </div>
+                    <div className='description__item6 description__text'>
+                        <h3 className='description__text--header'>Najwyższy standard</h3>
+                        <p className='description__text--p'>Nasze apartamenty można wynająć na doby, dni, a także miesiące. Stworzyliśmy apartamenty, które są
+                        nie tylko funkcjonalne, ale także wygodne.</p>
+                    </div>
+                </div>
+            </section>
         </section>
     )
 }

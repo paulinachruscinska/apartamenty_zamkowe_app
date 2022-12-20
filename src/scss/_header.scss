@@ -54,7 +54,6 @@ header {
     opacity: 0;
     animation: appearance 1.5s linear 3s;
     animation-fill-mode: both;
-    @include galaxyFold;
     @include tablet;
     @include desktop;
 
@@ -70,9 +69,6 @@ header {
       letter-spacing: 2px;
       font-weight: 400;
 
-      @include galaxyFold {
-        font-size: 2rem;
-      }
 
       @include tablet {
         font-size: 4rem;
@@ -93,12 +89,6 @@ header {
       text-align: center;
       text-transform: uppercase;
       padding-bottom: 1rem;
-
-      @include galaxyFold{
-        font-size: 1.25rem;
-        margin: 1rem 0;
-        padding: 10px;
-      }
 
       @include tablet{
         font-size: 2.4rem;
