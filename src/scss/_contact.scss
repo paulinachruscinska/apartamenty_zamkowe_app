@@ -77,9 +77,7 @@ h3{
   font-size: 1.5rem;
   font-family: $additionalFont;
   margin: 1rem 0;
-  @include galaxyFold{
-    font-size: 1rem;
-  }
+
   @include tablet{
     font-size: 1.7rem;
   }
@@ -95,10 +93,6 @@ h3{
   margin: 0;
   padding: 1.5rem;
 
-  @include galaxyFold{
-    font-size: 1rem;
-    padding: 1rem 0.5rem;
-  }
   @include tablet{
     font-size: 1.5rem;
   }
@@ -115,10 +109,6 @@ h3{
   text-transform: none;
   letter-spacing: 1px;
 
-  @include galaxyFold{
-    font-size: 0.8rem;
-    padding: 1rem 0.5rem;
-  }
   @include tablet{
     font-size: 1.25rem;
   }
