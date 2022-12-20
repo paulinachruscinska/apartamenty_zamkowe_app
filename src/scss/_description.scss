@@ -1,32 +1,39 @@
 .description {
-  .description__header{
+  .description__header {
     text-align: center;
-        color: $hoverColor;
-        margin: 4rem auto;
-        @include tablet{
-          margin-top: 5rem;
-        }
-        @include desktop {
-        margin-top: 6rem;
-        }
-        @include big-desktop {
-          margin-top: 6rem;
-        }
+    color: $hoverColor;
+    margin: 4rem auto;
+    @include tablet {
+      margin-top: 5rem;
+    }
+    @include desktop {
+      margin-top: 6rem;
+    }
+    @include big-desktop {
+      margin-top: 6rem;
+    }
   }
-  .description__container{
+
+  .description__container {
     display: block;
-    width: 100%;
+    max-width: 100%;
+    //width: 100%;
+    @include tablet;
   }
 }
 .description__box{
   margin: 40px 0;
+  @include tablet{
+    margin:60px 0;
+    display: flex;
+    height: 470px;
+  }
 }
 .description__photo{
   height: 350px;
   display: block;
   max-width: 100%;
   width: 100%;
-
   position: relative;
   &:before{
         content: '';
@@ -38,7 +45,19 @@
         right: 0;
         border: 2px solid $hoverColor;
         border-right: none;
+        z-index: 2;
+    @include tablet{
+      margin: 0;
+      right:-20px;
+      border-right: 2px solid $hoverColor;
+
+    }
       }
+  @include tablet{
+    margin: 0;
+    width:50%;
+    height: 470px;
+  }
   img{
     aspect-ratio: 1;
     object-fit: cover;
@@ -46,21 +65,48 @@
     height: 350px;
     max-width: 100%;
     width: 100%;
+    @include tablet{
+      margin: 0;
+      height: 470px;
+    }
   }
 }
 .description__text{
   padding: 20px 0;
   background-color: $boxColor;
-  //height: 400px;
   display: flex;
   justify-content: space-around;
   align-content: center;
   flex-direction: column;
+  position: relative;
+  &:before{
+    content: '';
+    background: $shadowColor;
+    opacity: 0.15;
+    mask: url('../images/crown-solid.svg') no-repeat left;
+    mask-size: cover;
+    width: 190px;
+    height: 350px;
+    top:50%;
+    right: 0;
+    transform: translateY(-50%);
+    position: absolute;
+
+  }
+  @include tablet{
+    box-sizing: border-box;
+    padding: 20px 25px;
+    margin: 0;
+    width:50%;
+    height: 470px;
+  }
 }
 .description__text--header{
   margin: 0;
   color: $hoverColor;
   text-transform: uppercase;
+  position: relative;
+  z-index: 2;
 }
 .description__text--p{
   padding: 10px 10px;
@@ -69,7 +115,9 @@
   margin: 0;
   text-transform: none;
   letter-spacing: 2px;
-  line-height: 1.5;
+  line-height: 1.75;
+  position: relative;
+  z-index: 2;
 
 }
 
