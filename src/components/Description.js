@@ -13,21 +13,24 @@ export default function Decription(){
                     <div className='description__photo'>
                         <img alt='session' src={img2} className='description__item1 '/>
                     </div>
+                    <div className='description__photo--additional photo2'>
+                        <img alt='session' src={img2} className='description__item1 '/>
+                    </div>
                     <div className='description__item2 description__text'>
                         <h3 className='description__text--header'>Komfort przede wszystkim</h3>
                         <p className='description__text--p'>Apartamenty, które oferujemy charakteryzują się nadzwyczajnym komfortem oraz nieprzeciętnym wnętrzem.
                         Są idealnym miejscem na romantyczne wieczory, noce poślubne, pauzę w podróży czy sesje fotograficzne.
-                        Z pewnością urlop w naszych apartamentach zagwarantuje miłe wspomnienia ze wspólnego wypoczynku.</p>
+                        </p>
                     </div>
                 </div>
-                <div className='description__box'>
+                <div className='description__box description__box2'>
                     <div className='description__photo'>
                         <img alt='kitchen' src={img9} className='description__item3 '/>
                     </div>
                     <div className='description__item4 description__text'>
                         <h3 className='description__text--header'>Wszystko czego potrzebujesz</h3>
                         <p className='description__text--p'>W pełni wyposażony aneks kuchenny czy strefa wypoczynku sprawiają, że nawet w podróży służbowej goście mogą
-                        poczuć się jak w domu.</p>
+                        poczuć się jak w domu. Luksusowa łazienka czy nowoczesny wygląd sprawiają, że pobyt tu to prawdziwa przyjemność.</p>
                     </div>
                 </div>
                 <div className='description__box'>
@@ -37,7 +40,7 @@ export default function Decription(){
                     <div className='description__item6 description__text'>
                         <h3 className='description__text--header'>Najwyższy standard</h3>
                         <p className='description__text--p'>Nasze apartamenty można wynająć na doby, dni, a także miesiące. Stworzyliśmy apartamenty, które są
-                        nie tylko funkcjonalne, ale także wygodne.</p>
+                        nie tylko funkcjonalne, ale także wygodne. Poczujesz się tu lepiej niż w hotelu pięciogwiazdkowym.</p>
                     </div>
                 </div>
             </section>
@@ -51,3 +54,4 @@ export default function Decription(){
 //                 w tym lodówką, jak również część wypoczynkowa z sofą, telewizor z płaskim ekranem,
 //                 pralka oraz prywatna łazienka z prysznicem i suszarką do włosów.
 //                 Wyposażenie obejmuje także piekarnik, płytę kuchenną i czajnik.
+//Z pewnością urlop w naszych apartamentach zagwarantuje miłe wspomnienia ze wspólnego wypoczynku.
