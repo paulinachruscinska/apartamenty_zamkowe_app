@@ -1,18 +1,12 @@
-import img1 from '../images/AC14.jpg';
-import img2 from '../images/AC5.jpg';
-import img3 from '../images/AE5.jpg';
-import img4 from '../images/AE6.jpg';
+import Carousel from "./Carousel";
 import bath from '../images/bath_bw.jpeg';
-import {Carousel} from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-const carousel = [img1, img2, img3, img4]
 
 
 export default function Decription(){
     return(
         <section className='description'>
             <div className='description__text'>
-                <h2 className='description__header'>Odkryj nasze wyjątkowe apartamenty</h2>
+                <h3 className='description__header'>Odkryj nasze wyjątkowe apartamenty</h3>
                 <p className='description__text--p'>Apartamenty, które oferujemy charakteryzują się nadzwyczajnym
                     komfortem oraz nieprzeciętnym wnętrzem.
                     Są idealnym miejscem na romantyczne wieczory, noce poślubne, pauzę w podróży czy sesje fotograficzne.</p>
@@ -24,15 +18,7 @@ export default function Decription(){
                     nie tylko funkcjonalne, ale także wygodne. Poczujesz się tu lepiej niż w hotelu pięciogwiazdkowym.</p>
             </div>
             <div className='description__carousel'>
-                <Carousel autoPlay showArrows={false} showIndicators={false} showThumbs={false} showStatus={false} infiniteLoop interval='2000' transitionTime='500'>
-                    {carousel.map((photo, index)=>{
-                        return (
-                                <div key={index}>
-                                    <img src={photo} alt='apartament'/>
-                                </div>
-                            )
-                    })}
-                </Carousel>
+                <Carousel/>
                 {/*<img className='description__photo' src={bath} alt='bath'/>*/}
             </div>
 
