@@ -9,7 +9,9 @@ export default function AboutUs(){
             <h2>Zrelaksuj się w naszych apartamentach</h2>
             <p>Niezależnie, czy pobyt tutaj jest podyktowany chęcią odpoczynku od zgiełku
             dnia codziennego, czy wybierasz się w podróż służbową - pozwól sobie
-                na odpoczynek w <span>naszych apartamentach. </span></p>
+                na odpoczynek w <span>naszych apartamentach. </span>
+                Lokalizacja w samym sercu miasta umożliwia szybkie dostanie się do dowolnego zakamarka Kwidzyna. W pobliżu znajdują
+                się restauracje, kawiarnie, sklepy, siłownia.</p>
             <div className='about-us__photos'>
                 <div className='about-us__photo'>
                     <img src={img1} alt='apartament'/>
@@ -29,5 +31,4 @@ export default function AboutUs(){
     )
 }
 
-//Lokalizacja w samym sercu miasta umożliwia szybkie dostanie się do dowolnego zakamarka Kwidzyna. W pobliżu znajdują
-//                 się restauracje, kawiarnie, sklepy, siłownia.
+//
