@@ -1,27 +1,51 @@
 .description{
+  margin: 20px;
   position: relative;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   @include tablet;
-  @include desktop;
+  @include desktop{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @include big-desktop;
   .description__text{
-    width: 50%;
+    width: 100%;
     h3{
-      text-align: left;
       color: $shadowColor;
     }
-    p{
-      text-align: left;
-      font-size:  1.1rem;
-      padding-bottom: 0;
+    @include desktop {
+      margin: 0;
+      width: 50%;
+      h3 {
+        text-align: left;
+      }
+      p {
+        text-align: left;
+        font-size: 1.1rem;
+        padding-bottom: 0;
+      }
+    }
+    @include big-desktop{
+      margin: 0;
+      width: 45%;
     }
   }
   .description__carousel{
-    width: 40%;
+    width: 100%;
     position: relative;
     min-height: 700px;
     max-height: 1000px;
+    @include desktop{
+      margin: 0;
+      width: 45%;
+    }
+    @include big-desktop{
+      margin: 0;
+      width: 50%;
+    }
     //img{
       //filter: grayscale(1);
     //}

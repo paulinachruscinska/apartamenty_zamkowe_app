@@ -70,7 +70,7 @@
   }
   @include tablet{
     margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin-bottom: 6rem;
     h2{
       //width: 60%;
       margin-top: 0;
@@ -81,7 +81,7 @@
   }
   @include desktop{
     margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
     h2{
       //max-width: 1200px;
       margin-top: 0;
@@ -93,7 +93,7 @@
   }
   @include big-desktop{
     margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
     h2{
       //width: 60%;
     }
