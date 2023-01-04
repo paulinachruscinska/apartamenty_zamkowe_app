@@ -1,8 +1,9 @@
 import Carousel from "./Carousel";
+import carouselPhoto from "../data/carouselPhoto";
 import bath from '../images/bath_bw.jpeg';
 
 
-export default function Decription(){
+export default function Description(){
     return(
         <section className='description'>
             <div className='description__text'>
@@ -18,7 +19,7 @@ export default function Decription(){
                     nie tylko funkcjonalne, ale także wygodne. Poczujesz się tu lepiej niż w hotelu pięciogwiazdkowym.</p>
             </div>
             <div className='description__carousel'>
-                <Carousel/>
+                <Carousel carousel={carouselPhoto}/>
                 {/*<img className='description__photo' src={bath} alt='bath'/>*/}
             </div>
 
