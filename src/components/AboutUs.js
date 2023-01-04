@@ -15,15 +15,15 @@ export default function AboutUs(){
             <div className='about-us__photos'>
                 <div className='about-us__photo'>
                     <img src={img1} alt='apartament'/>
-                    <p>Estetyka</p>
+                    <p className='photo-text'>Estetyka</p>
                 </div>
                 <div className='about-us__photo'>
                     <img src={img2} alt='apartament'/>
-                    <p>Wygoda</p>
+                    <p className='photo-text'>Wygoda</p>
                 </div>
                 <div className='about-us__photo'>
                 <img src={img3} alt='apartament'/>
-                    <p>Piękno</p>
+                    <p className='photo-text'>Piękno</p>
             </div>
             </div>
             <div className='photo'/>
