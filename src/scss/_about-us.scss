@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 20px;
   h3{
     color:$shadowColor;
   }
@@ -9,16 +10,36 @@
     font-weight: 500;
   }
   .about-us__photos{
-    margin-top: 10rem;
+    margin-top: 5rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    .about-us__photo{
-      aspect-ratio: 255/355;
-      width: 27%;
-      position: relative;
+    @include desktop{
+      margin: 0;
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
-      p{
+    .about-us__photo{
+      width: 80%;
+      //height: 400px;
+      aspect-ratio: 1;
+      object-fit: cover;
+      position: relative;
+      margin-bottom: 20px;
+      @include tablet {
+        width: 60%;
+        aspect-ratio: 1;
+
+      }
+      @include desktop{
+        margin: 10rem 0;
+        width: 27%;
+        aspect-ratio: 255/355;
+      }
+
+      .photo-text{
         position: absolute;
         bottom: 10px;
         left:50%;
@@ -26,7 +47,11 @@
         font-weight: 400;
         color: $shadowColor;
         z-index: 2;
-        font-size: 1.5rem;
+        font-size: 1rem;
+        @include desktop{
+          font-size: 1.25rem;
+          margin: 0;
+        }
       }
       &:before{
         position: absolute;
@@ -47,17 +72,34 @@
     margin-top: 10rem;
     margin-bottom: 10rem;
     h2{
-      width: 60%;
+      //width: 60%;
       margin-top: 0;
     }
     p{
-      width: 60%;
+      //width: 60%;
     }
   }
   @include desktop{
     margin-top: 10rem;
     margin-bottom: 10rem;
+    h2{
+      //max-width: 1200px;
+      margin-top: 0;
+    }
+    p{
+      //max-width: 1200px;
+    }
 
+  }
+  @include big-desktop{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    h2{
+      //width: 60%;
+    }
+    p{
+      //width: 60%;
+    }
   }
   //.photo{
   //  background: url("../images/AC20.jpeg") center no-repeat;

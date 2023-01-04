@@ -10,7 +10,7 @@ $big-desktop-width: 1500px;
 }
 @mixin desktop(){
   @media(min-width: #{$desktop-width}){
-    margin: 1em 250px;
+    margin: 1em 4%;
     @content;
   }
 }
