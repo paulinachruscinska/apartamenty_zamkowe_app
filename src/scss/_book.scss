@@ -1,0 +1,32 @@
+.book{
+  margin: 10rem 0;
+  padding: 5rem 0;
+  background: url('../images/allec-gomes-fuooELn4jyA-unsplash.jpg') no-repeat center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .button{
+    box-sizing: border-box;
+    margin: 2rem 0.625rem 2rem;
+    padding: 0.75rem 2rem;
+    background-color: $shadowColor;
+    border: 1px solid $hoverColor;
+    font-family: $fontColor;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 1s;
+    .button__icon{
+      transform: translateX(0);
+      transition: 0.3s ease-out;
+    }
+    &:hover{
+      background-color: $hoverColor;
+      .button__icon{
+        transform: translateX(5px);
+      }
+    }
+  }
+}

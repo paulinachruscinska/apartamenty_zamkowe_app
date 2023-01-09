@@ -7,16 +7,18 @@ export default function Description(){
     return(
         <section className='description'>
             <div className='description__text'>
+                <div className='description__text-box'>
                 <h3 className='description__header'>Odkryj nasze wyjątkowe apartamenty</h3>
-                <p className='description__text--p'>Apartamenty, które oferujemy charakteryzują się nadzwyczajnym
+                <p className='text'>Apartamenty, które oferujemy charakteryzują się nadzwyczajnym
                     komfortem oraz nieprzeciętnym wnętrzem.
                     Są idealnym miejscem na romantyczne wieczory, noce poślubne, pauzę w podróży czy sesje fotograficzne.</p>
-                <p className='description__text--p'>W pełni wyposażony aneks kuchenny czy strefa wypoczynku sprawiają,
+                <p className='text'>W pełni wyposażony aneks kuchenny czy strefa wypoczynku sprawiają,
                     że nawet w podróży służbowej goście mogą
                     poczuć się jak w domu. Luksusowa łazienka czy nowoczesny wygląd sprawiają, że pobyt tu to prawdziwa przyjemność.</p>
-                <p className='description__text--p'>Nasze apartamenty można wynająć na doby, dni, a także miesiące.
+                <p className='text'>Nasze apartamenty można wynająć na doby, dni, a także miesiące.
                     Stworzyliśmy apartamenty, które są
                     nie tylko funkcjonalne, ale także wygodne. Poczujesz się tu lepiej niż w hotelu pięciogwiazdkowym.</p>
+                </div>
             </div>
             <div className='description__carousel'>
                 <Carousel carousel={carouselPhoto}/>
