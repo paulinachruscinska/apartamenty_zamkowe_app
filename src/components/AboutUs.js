@@ -7,7 +7,7 @@ export default function AboutUs(){
         <section className='about-us'>
             <h3>Pozwól sobie na najwyższy komfort noclegu</h3>
             <h2>Zrelaksuj się w naszych apartamentach</h2>
-            <p>Niezależnie, czy pobyt tutaj jest podyktowany chęcią odpoczynku od zgiełku
+            <p className='text'>Niezależnie, czy pobyt tutaj jest podyktowany chęcią odpoczynku od zgiełku
             dnia codziennego, czy wybierasz się w podróż służbową - pozwól sobie
                 na odpoczynek w <span>naszych apartamentach. </span>
                 Lokalizacja w samym sercu miasta umożliwia szybkie dostanie się do dowolnego zakamarka Kwidzyna. W pobliżu znajdują

@@ -4,6 +4,7 @@ import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 import Description from "./components/Description";
 import AboutUs from "./components/AboutUs";
+import Book from "./components/Book";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
           <AboutUs/>
           <Description/>
           <Gallery/>
+          <Book/>
           <Contact/>
       </>
   );

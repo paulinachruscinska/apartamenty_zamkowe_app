@@ -4,27 +4,33 @@
 .gallery{
   margin: 1rem 0;
   padding: 1rem 0;
+  h3{
+    color: $hoverColor;
+  }
+  @include desktop{
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+  }
+  @include big-desktop{
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+  }
   .apartaments{
-    padding: 0 1rem;
-    @include tablet{
-      padding: 0;
-    }
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
     @include desktop{
-      padding: 0;
-    }
-    @include big-desktop{
-      padding: 0;
+      margin: 0;
+      flex-direction: row;
+      gap:40px;
 
     }
-    .apartament__box{
-      display: flex;
-      flex-direction: column;
-      @include tablet{
-        flex-direction: row;
-      }
-      @include desktop;
-      @include big-desktop;
+    @include big-desktop{
+      margin: 0;
     }
+  }
+
+
     .apartament {
       margin: 0;
       max-width: 100%;
@@ -32,16 +38,26 @@
       height: 400px;
       background-size: cover;
       position: relative;
-      &:before{
+      &:after{
         content: '';
         position: absolute;
-        width: 96%;
-        height: 96%;
-        top:50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border: 2px solid white;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background: linear-gradient(to top, rgba(0,0,0,0.9) 20%, transparent 75%);
       }
+      //&:before{
+      //  content: '';
+      //  position: absolute;
+      //  width: 100%;
+      //  height: 100%;
+      //  top: 20px;
+      //  left: 10px;
+      //  border: 2px solid $hoverColor;
+      //  z-index: 3;
+      //}
 
 
       &:hover{
@@ -99,7 +115,7 @@
       transform: translate(-50%, 0);
     }
   }
-}
+
 
 //POPUP
 .modal, .overlay {

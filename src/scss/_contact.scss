@@ -21,6 +21,7 @@
     align-items: center;
     justify-content: right;
   }
+  @include big-desktop;
 }
 .contact__body__text{
   background-color: $boxColor;
@@ -51,7 +52,7 @@
   }
 }
 .contact__body__photo{
-  background: url("../images/flowers.jpeg") center no-repeat;
+  background: url("../images/flowers.jpeg") no-repeat center;
   background-size: cover;
   height: 50vh;
   box-shadow: $boxColor 2px 2px 2px;
