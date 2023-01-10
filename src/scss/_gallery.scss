@@ -2,10 +2,13 @@
 @import 'settings/colors';
 @import 'settings/fonts';
 .gallery{
-  margin: 1rem 0;
+  margin: 1rem 20px;
   padding: 1rem 0;
   h3{
     color: $hoverColor;
+  }
+  @include tablet{
+    margin-top: 10rem;
   }
   @include desktop{
     margin-top: 10rem;
@@ -17,22 +20,20 @@
   }
   .apartaments{
     padding: 40px 0;
-    display: flex;
-    flex-direction: column;
+
     @include desktop{
+      display: flex;
       margin: 0;
       flex-direction: row;
       gap:40px;
-
     }
     @include big-desktop{
       margin: 0;
     }
   }
 
-
     .apartament {
-      margin: 0;
+      margin: 20px 0;
       max-width: 100%;
       width: 100%;
       height: 400px;
@@ -64,11 +65,12 @@
         cursor: pointer;
         .hover{
           opacity: 80%;
-          transition: 0.4s;
+          visibility: visible;
+          transition: all 0.4s ease-in-out;
         }
       }
       @include tablet{
-        margin: 0;
+        margin: 40px 0;
         height: 500px;
       }
       @include desktop{
@@ -100,6 +102,7 @@
     height: 100%;
     background: black;
     opacity: 0;
+    visibility: hidden;
 
   }
     .hover__text{
@@ -107,7 +110,7 @@
       position: absolute;
       margin: 0;
       width: 100%;
-      height: 100%;
+      height: 50%;
       font-size: 1.5rem;
       text-transform: none;
       top:50%;

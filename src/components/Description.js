@@ -1,6 +1,6 @@
 import Carousel from "./Carousel";
 import carouselPhoto from "../data/carouselPhoto";
-import bath from '../images/bath_bw.jpeg';
+
 
 
 export default function Description(){
@@ -22,7 +22,6 @@ export default function Description(){
             </div>
             <div className='description__carousel'>
                 <Carousel carousel={carouselPhoto}/>
-                {/*<img className='description__photo' src={bath} alt='bath'/>*/}
             </div>
 
         </section>

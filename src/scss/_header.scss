@@ -8,7 +8,6 @@ header {
   max-width: 100%;
   height: 100vh;
   width: 100vw;
-
   background-size: cover;
   position: relative;
   z-index: 0;
@@ -54,7 +53,9 @@ header {
     opacity: 0;
     animation: appearance 1.5s linear 3s;
     animation-fill-mode: both;
-    @include tablet;
+    @include tablet{
+      margin: 0;
+    }
     @include desktop;
 
     h1{
@@ -71,10 +72,12 @@ header {
 
 
       @include tablet {
+        margin: 0;
         font-size: 4rem;
         letter-spacing: 5px;
       }
       @include desktop {
+        margin: 0;
         font-size: 5rem;
         letter-spacing: 7px;
       }

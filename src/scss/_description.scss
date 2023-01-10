@@ -1,11 +1,16 @@
 .description{
+  box-sizing: border-box;
   margin: 20px;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @include tablet;
+  max-width: 100%;
+  @include tablet{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
   @include desktop{
     flex-direction: row;
     justify-content: space-between;
@@ -13,13 +18,26 @@
   }
   @include big-desktop;
   .description__text{
-    position: relative;
+    max-width: 100%;
     width: 100%;
+    @include tablet{
+      margin: 0;
+      min-height: 700px;
+      position: relative;
+      width: 40%;
+    }
 
-    min-height: 700px;
 
     h3{
+      font-size: 2.4rem;
       color: $shadowColor;
+      @include tablet{
+        margin: 0;
+        font-size: 1.7rem;
+      }
+      @include desktop{
+        font-size: 1.7rem;
+      }
     }
     @include desktop {
       margin: 0;
@@ -28,6 +46,7 @@
         text-align: left;
       }
       p {
+        margin: 0;
         text-align: left;
         font-size: 1.1rem;
         padding-bottom: 0;
@@ -39,10 +58,15 @@
     }
   }
   .description__carousel{
+    max-width: 100%;
     width: 100%;
-    position: relative;
-    min-height: 700px;
-    max-height: 1000px;
+    height: 400px;
+    @include tablet{
+      margin: 0;
+      width: 60%;
+      position: relative;
+      height: 700px;
+    }
     @include desktop{
       margin: 0;
       width: 45%;
@@ -66,16 +90,25 @@
     left: -20%;
   }
 }
+
 .description__text-box{
+  box-sizing: border-box;
+  //max-width: 100%;
   width: 100%;
-  position: absolute;
-  z-index: 3;
+  position: static;
   background: $boxColor;
-  padding: 40px 20px;
-  top:50%;
-  left:0;
-  transform: translateY(-50%);
-  box-shadow: $boxColor 2px 2px 2px;
+
+  @include tablet{
+    margin: 0;
+    box-shadow: $boxColor 2px 2px 2px;
+    position: absolute;
+    z-index: 3;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+    padding: 40px 20px;
+    width: 140%;
+  }
   @include desktop{
     margin: 0;
     width: 120%;
