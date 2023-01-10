@@ -66,7 +66,7 @@
         .hover{
           opacity: 80%;
           visibility: visible;
-          transition: all 0.4s ease-in-out;
+
         }
       }
       @include tablet{
@@ -103,6 +103,7 @@
     background: black;
     opacity: 0;
     visibility: hidden;
+    transition: all 0.4s ease-in-out;
 
   }
     .hover__text{
