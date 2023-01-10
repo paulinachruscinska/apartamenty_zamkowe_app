@@ -3,7 +3,7 @@ import img2 from '../images/AC5.jpg';
 import img3 from '../images/AE5.jpg';
 import img4 from '../images/AE6.jpg';
 
-export default[
+const carousel=[
     {
         image: img1,
         alt: 'apartament-Carina'
@@ -22,3 +22,4 @@ export default[
     },
 
 ]
+export default carousel;
