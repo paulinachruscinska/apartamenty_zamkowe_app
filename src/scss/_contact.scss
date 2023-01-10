@@ -105,14 +105,15 @@ h3{
 }
 .text{
   font-size: 1rem;
-  text-align: left;
+  text-align: center;
   margin: 0;
   padding: 1rem 1.5rem;
   text-transform: none;
   letter-spacing: 1px;
 
   @include tablet{
-    font-size: 1.25rem;
+    margin: 0;
+    font-size: 1rem;
   }
   @include desktop{
     font-size: 1.5rem;
@@ -138,4 +139,7 @@ h3{
 }
 .instagram-logo{
   mask: url('../images/instagram.svg') no-repeat center;
+}
+.text--contact{
+  text-align: left;
 }

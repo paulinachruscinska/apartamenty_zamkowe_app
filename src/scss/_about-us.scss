@@ -12,9 +12,15 @@
   .about-us__photos{
     margin-top: 5rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    @include tablet{
+      margin: 0;
+      flex-direction: row;
+      justify-content: space-between;
+    }
     @include desktop{
       margin: 0;
       flex-direction: row;
@@ -22,15 +28,16 @@
     }
 
     .about-us__photo{
-      width: 80%;
+      width: 60%;
       //height: 400px;
-      aspect-ratio: 1;
+      aspect-ratio: 1/1.25;
       object-fit: cover;
       position: relative;
       margin-bottom: 20px;
       @include tablet {
-        width: 60%;
-        aspect-ratio: 1;
+        margin: 2rem 0;
+        width: 27%;
+        aspect-ratio: 1/1.25;
 
       }
       @include desktop{

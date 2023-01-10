@@ -43,8 +43,8 @@ export default function Contact(){
                         return(
                             <div className='contact__body__text__box' key={index}>
                                 <p className='text--main'>{information.main}</p>
-                                <p className='text'>{information.additionalInformation_first}</p>
-                                <p className='text'>{information.additionalInformation_second}</p>
+                                <p className='text text--contact'>{information.additionalInformation_first}</p>
+                                <p className='text text--contact'>{information.additionalInformation_second}</p>
                             </div>
                         )
                     })}
