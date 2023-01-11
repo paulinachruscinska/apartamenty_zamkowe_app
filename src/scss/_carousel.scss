@@ -25,7 +25,6 @@
     //width: 80%;
     height: 400px;
     //aspect-ratio: 1;
-    object-fit: cover;
     width: 100%;
     @include tablet{
       margin: 0;
@@ -40,12 +39,19 @@
   }
 }
 .carousel__photo{
-  //aspect-ratio: 1;
-  height: 400px;
   object-fit: cover;
-  position: relative;
-  //max-width: 100%;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  transition: all 2s ease;
+
+  &:not(.slide-active) {
+    visibility: hidden;
+    opacity: 0;
+  }
+
   @include tablet{
     margin: 0;
     height: 700px;
@@ -57,12 +63,7 @@
 
 }
 .slide-active{
-  top:0;
-  left:0;
-  position: absolute;
-  //z-index: 2;
   opacity: 1;
-  transition: all 2s ease;
   visibility: visible;
 
 }
